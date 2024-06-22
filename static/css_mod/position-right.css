@@ -1,0 +1,109 @@
+.position-right-50-fix{
+    position: absolute;
+    right: 50%;
+}
+.position-right-16{
+    position: absolute;
+    right: 16%;
+}
+.position-right-15-fix{
+    position: absolute;
+    right: 15%;
+}
+.position-right-20-fix,
+.position-right-20-fix-1{
+    position: absolute;
+    right: 20%;
+}
+.position-right-30-fix{
+    position: absolute;
+    right: 30%;
+}
+.position-right-28-fix{
+    position: absolute;
+    right: 28%;
+}
+.position-right-10-fix{
+    position: absolute;
+    right: 10%;
+}
+.position-right-0-fix{
+    position: absolute;
+    right: 0%;
+}
+.position-right-10-fix{
+    position: absolute;
+    right: 10%;
+}
+
+@media  screen and (min-width: 360px) and (max-width: 767px)
+{
+    .position-right-15-fix,
+    .position-right-50-fix,
+    .position-right-20-fix,
+    .position-right-30-fix,
+    .position-right-10-fix,
+    .position-right-16{
+        right: 0;
+    }
+    .position-right-20-fix-1{
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .position-right-0-fix{
+        right: 0;
+    }
+    .position-right-10-fix{
+        left: 10%;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+}
+@media  screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .position-right-20-fix-1{
+        right: 13%;
+    }
+    .position-right-20-fix{
+        right: 10%;
+    }
+    .position-right-28-fix{
+        right: 22%;
+    }
+    .position-right-15-fix{
+        right: 0;
+    }
+    .position-right-30-fix{
+        right: 25%;
+    }
+}
+@media  screen and (min-width: 1281px) and (max-width: 1439px)
+{
+    .position-right-15-fix{
+        right: 10%;
+    }
+    .position-right-50-fix{
+        right: 40%;
+    }
+    .position-right-20-fix{
+        right: 10%;
+    }
+    .position-right-20-fix-1{
+        right: 17%;
+    }
+    .position-right-28-fix{
+        right: 25%;
+    }
+    .position-right-10-fix{
+        right: 0;
+    }
+}
+
+@media  screen and (min-width: 1440px)
+{
+
+}

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.border-none{
+    border: none;
+}
+.service-margin-top{
+    margin-top: 0;
+}
+/* .img-7-bg{
+    background-image: url('../images/service-price/img-7.png');
+    background-size: cover;
+} */
+.service-img-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

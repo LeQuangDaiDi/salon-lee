@@ -1,0 +1,13 @@
+.policy-letter-spacing{
+    letter-spacing: 0.2rem;
+}
+.policy-inline{
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.policy-margin-left{
+    margin-left: 10px;
+}

@@ -1,0 +1,157 @@
+.position-right-0-fix,
+.position-right-0-fix-1{
+    position: absolute;
+    right: 0%;
+}
+
+.position-right-10-fix,
+.position-right-10-fix-1{
+    position: absolute;
+    right: 10%;
+}
+
+.position-right-15-fix{
+    position: absolute;
+    right: 15%;
+}
+
+.position-right-16{
+    position: absolute;
+    right: 16%;
+}
+
+.position-right-16-fix,
+.position-right-16-fix-1,
+.position-right-16-fix-2,
+.position-right-16-fix-3,
+.position-right-16-fix-4{
+    position: absolute;
+    right: 16%;
+}
+
+.position-right-20-fix,
+.position-right-20-fix-1,
+.position-right-20-fix-2{
+    position: absolute;
+    right: 20%;
+}
+
+.position-right-28-fix{
+    position: absolute;
+    right: 28%;
+}
+
+.position-right-30-fix{
+    position: absolute;
+    right: 30%;
+}
+
+.position-right-50-fix{
+    position: absolute;
+    right: 50%;
+}
+
+.position-right-53-fix,
+.position-right-53-fix-1{
+    position: absolute;
+    right: 53%;
+}
+@media screen and (min-width: 320px) and (max-width: 359px){
+        .position-right-20-fix-1{
+        right: 0%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 389px) {
+    .position-right-0-fix,
+    .position-right-15-fix,
+    .position-right-50-fix,
+    .position-right-20-fix,
+    .position-right-30-fix,
+    .position-right-10-fix,
+    .position-right-16 {
+        right: 0;
+    }
+    .position-right-20-fix-1 {
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .position-right-10-fix-1 {
+        left: 10%;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 424px) {
+    .position-right-20-fix-1 {
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .position-right-20-fix-1 {
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .position-right-20-fix-1 {
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .position-right-0-fix {
+        right: 0;
+    }
+    .position-right-15-fix {
+        right: 0;
+    }
+    .position-right-20-fix {
+        right: 10%;
+    }
+    .position-right-20-fix-1 {
+        right: 13%;
+    }
+    .position-right-28-fix {
+        right: 22%;
+    }
+    .position-right-30-fix {
+        right: 25%;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+    .position-right-0-fix {
+        right: 0;
+    }
+    .position-right-10-fix {
+        right: 0;
+    }
+    .position-right-15-fix {
+        right: 10%;
+    }
+    .position-right-20-fix {
+        right: 10%;
+    }
+    .position-right-20-fix-1 {
+        right: 17%;
+    }
+    .position-right-28-fix {
+        right: 25%;
+    }
+    .position-right-50-fix {
+        right: 40%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Add your media query styles here if needed */
+}

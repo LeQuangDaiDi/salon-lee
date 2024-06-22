@@ -1,0 +1,43 @@
+.position-bottom-8-fix{
+    position:absolute;
+    bottom: 10%;
+}
+.position-bottom-5-fix{
+    position:absolute;
+    bottom: 5%;
+}
+.position-bottom-3-fix{
+    position:absolute;
+    bottom: 3%;
+}
+@media  screen and (min-width: 360px) and (max-width: 374px)
+{
+    .position-bottom-8-fix{
+        bottom: 2%;
+    }
+}
+@media  screen and (min-width: 375px) and (max-width: 767px)
+{
+    .position-bottom-8-fix,
+    .position-bottom-5-fix{
+        bottom: 2%;
+    }
+    .position-bottom-3-fix{
+        bottom: 8%;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1439px)
+{
+
+}
+
+@media  screen and (min-width: 1440px)
+{
+
+}

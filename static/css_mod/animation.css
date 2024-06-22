@@ -1,0 +1,25 @@
+.scroll-loading{
+    opacity: 0;
+}
+.animation-header{
+    animation: animation-header 0.5s ease-in 0.3s 1 normal forwards;
+    opacity: 0;         
+}
+@keyframes animation-header{
+    from{
+        transform: translateY(0.2vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes scroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

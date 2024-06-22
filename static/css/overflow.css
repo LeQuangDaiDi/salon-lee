@@ -1,0 +1,8 @@
+/* Dọc */
+.overflow-y-hidden{
+    overflow-y: hidden;
+} 
+/* Ngang */
+.overflow-x-hidden{
+    overflow-x: hidden;
+} 

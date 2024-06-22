@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/frame.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/position-top.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/position-left.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/font-size.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/font-family.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/text-color.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/display.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/margin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/overflow.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/letter-spacing.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/position-right.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/position-bottom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/stay-in-here.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/animation.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/navbar-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/bg.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/font-size-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/position-left-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/position-top-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/img-size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/position-right-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/position-bottom-fix.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/service.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/about.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/policy.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_mod/program.css') }}">
+
+
+
+    <title>{% block title %}Salon tóc hiện đại | Lee Hair Salon {% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 navbar-bg font-raleway-title" bg-dark>
+        <div class="container">
+          <a class="navbar-brand" href="trang-chu">
+            <img class="scrollToTop animation-header"src="../static/images/logo/logo.png" alt="Bootstrap" width="100" height="30">
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            aira-controls="navbarNav"
+            aria-expanded="false"
+            aira-label="Toggle Navbar"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="trang-chu" class="{{homescroll}} {{homehover}} nav-link text-dark nav-hover">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dat-hen" class="{{schedulescroll}} {{schedulehover}} nav-link text-dark nav-hover">Đặt hẹn</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ve-chung-toi" class="{{aboutscroll}} {{abouthover}} nav-link text-dark nav-hover">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bang-gia-dich-vu" class="{{servicescrol}} {{servicehover}} nav-link text-dark nav-hover">Bảng giá dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="chinh-sach-bao-hanh" class="{{polictyscroll}} {{policyhover}} nav-link text-dark nav-hover">Chính sách bảo hành</a>
+                </li>
+                <li class="nav-item">
+                    <a href="chuong-trinh" class="{{programscroll}} {{programhover}} nav-link text-dark nav-hover">Chương trình</a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="../static/js/animation-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".scrollToTop").click(function(event){
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+</body>
+</html>

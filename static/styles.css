@@ -1,31 +1,37 @@
-.img{
+.img {
     width: 100%;
     height: 550px;
     object-fit: cover;
     z-index: -1;
 }
-.content{
-    line-height: 550px; 
+
+.content {
+    line-height: 550px;
 }
-.menu-bg{
+
+.menu-bg {
     background-image: url('./images/background/bg-14.jpg');
     padding: 30px;
 }
-.font-raleway{
-    font-family: 'Raleway',monospace;
+
+.font-raleway {
+    font-family: 'Raleway', monospace;
     font-weight: 500;
     font-size: 25px;
 }
-.body{
-    font-family: 'Roboto',sans-serif;
+
+.body {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
-    
 }
-.container-fluid{
+
+.container-fluid, .img-fluid {
     --bs-gutter-x: 0rem;
 }
-*{
-    overflow: hidden;
+
+/* Loại bỏ overflow: hidden; trên tất cả các phần tử */
+* {
+    box-sizing: border-box;
 }

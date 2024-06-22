@@ -11,7 +11,8 @@
 
 .menu-bg {
     background-image: url('./images/background/bg-14.jpg');
-    padding: 30px;
+    padding: 20px 20px;
+
 }
 
 .font-raleway {
@@ -28,7 +29,39 @@
 }
 
 .container-fluid, .img-fluid {
-    --bs-gutter-x: 0rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+.position-relative {
+    position: relative;
+}
+
+.position-relative .col {
+    padding-left: calc(10%);
+    padding-right: calc(10%);
+}
+
+@media (max-width: 768px) {
+    .img-fluid-mobile {
+        max-height: 70vh; 
+    }
+    .custom-img-size {
+        max-width: auto; 
+        height: auto;
+        margin-bottom: 1px;
+    }
+    .responsive-text {
+        font-size: 4vw; /* Kích thước chữ thay đổi theo chiều rộng của viewport */
+    }
+
 }
 
 /* Loại bỏ overflow: hidden; trên tất cả các phần tử */

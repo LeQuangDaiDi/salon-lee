@@ -4,66 +4,141 @@
 {% endblock css %}
 
 {% block html %}
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <div class="row">
         {% include 'navbar.html' %}
     </div>
-
-    <div class="row" style="background-color: black; height: 70px; line-height: 70px;">
-        <div class="d-flex justify-content-center align-items-center">
-            <p class="text-white" v-text="getContent('content-H25')"></p>
+    <div class="row bg-black" style="height: 90px;">
+        <div class="col d-flex justify-content-center align-items-center">
+            <h4 class="fw-bold text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h4>
         </div>
     </div>
-
-    <div class="row position-relative">
-        <img class="img-fluid" src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
-        <div class="position-absolute mt-5 w-100">
+    <div class="row position-relative m-0">
+        <img class="img-fluid w-100" style="object-fit: cover; height: 100vh;" src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+        <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
-                <p class="text-white" v-text="getContent('content-H1')"></p>
+                <p class="text-white fs-3" v-text="getContent('content-H1')"></p>
             </div>
-            <div class="d-flex justify-content-center">
-                <h2 class="text-white display-4 mt-5" v-text="getContent('content-H2')"></h2>
+            <div class="d-flex justify-content-center mt-3">
+                <h2 class="text-white display-2 fw-bold " v-text="getContent('content-H2')"></h2>
             </div>
-            <div class="d-flex justify-content-center">
-                <p class="text-white" v-text="getContent('content-H3')"></p>
+            <div class="d-flex justify-content-center mt-3">
+                <p class="text-white fs-3" v-text="getContent('content-H3')"></p>
             </div>
-            <div class="d-flex justify-content-center">
-                <p class="text-white" v-text="getContent('content-H4')"></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- New Text Section -->
-    <div class="row" style="background-color: black; height: 70px; line-height: 70px;">
-        <div class="d-flex flex-column  justify-content-center align-items-center">
-            <h6 class="fs-1 text-white w-100 text-center" v-text="getContent('content-H5')"></h6>
-        </div>
-    </div>
-
-    <!-- Additional Text Sections -->
-    <div class=" row position-relative">
-        <div class="d-flex flex-column justify-content-center align-items-center mt-4">
-            <h6 class="fs-4 fw-bold text-dark w-100 text-center mt-4" v-text="getContent('content-H6')"></h6>
-            <p class="fs-5 text-dark lh-base text-center mt-4" v-text="getContent('content-H7')"></p>
-        </div>
-    </div>   
-    
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img class="p-3 bg-light img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg') }}" alt="">
-            </div>
-            <div class="col">
-                <img class="p-3 bg-light img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg') }}" alt="">
-            </div>
-            <div class="col">
-                <img class="p-3 bg-light img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg') }}" alt="">
-            </div>
-            <div class="col">
-                <img class="p-3 bg-light img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="">
+            <div class="d-flex justify-content-center mt-3">
+                <p class="text-white fs-3" v-text="getContent('content-H4')"></p>
             </div>
         </div>
     </div>    
+
+<!-- Hung update -->
+    <div class="row bg-black" style="height: 70px; line-height: 70px;">
+        <div class="col d-flex justify-content-center align-items-center">
+            <h3 class="fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H5')"></h3>
+        </div>
+    </div>
+<!-- Cắt thiết kế -->
+    <div class="row position-relative mt-5">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
+            <h6 class="fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
+            <p class="fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H7')"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col">
+                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg') }}" alt="Image 1">
+            </div>
+            <div class="col">
+                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg') }}" alt="Image 2">
+            </div>
+            <div class="col">
+                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg') }}" alt="Image 3">
+            </div>
+            <div class="col">
+                <img class="p-2 img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light mt-5">
+        <div class="container d-flex justify-content-center">
+            <div class="w-100" style="max-width: 80%;">
+                <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
+                <div class="row mb-5 mt-3">
+                    <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
+                        <div>
+                            <h3 class="fs-2 fw-bold text-dark m-0 mt-5" v-text="getContent('content-H8')"></h3>
+                            <p class="text-dark mt-3" v-text="getContent('content-H9')"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg') }}" alt="Image 1">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg') }}" alt="Image 2">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg') }}" alt="Image 3">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Phần dưới: Nội dung bên trái, hình ảnh bên phải -->
+                <div class="row flex-row-reverse mt-3">
+                    <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg') }}" alt="Image 1">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg') }}" alt="Image 2">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg') }}" alt="Image 3">
+                        </div>
+                        <div class="col-6 p-2">
+                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
+                        <div>
+                            <h3 class="fs-2 fw-bold text-dark m-0 mt-1" v-text="getContent('content-H10')"></h3>
+                            <p class="text-dark mt-3" v-text="getContent('content-H11')"></p>
+                        </div>
+                    </div>
+                    <div class="order-2 order-md-2 align-items-center mt-3">
+                        <div>
+                            <h3 class="fs-3 text-dark" v-text="getContent('content-H12')"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-black mt-5 " style="height: 70px; line-height: 70px;">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h3 class="fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H13')"></h3>
+            </div>
+        </div>
+    </div>
+<!-- @LEE.HAIR -->
+    <div class="container-fluid">
+        <div class="row position-relative mt-5">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <h6 class="fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
+                <p class="fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H15')"></p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+    
+    
+    
 </div>
 {% endblock html %}
 

@@ -5,13 +5,14 @@ const app = createApp({
         return {
             lang: 'vi',
             i18n: {
-                'en':{
+                'en': {
                     'test': 'Test'
                 },
-                'vi':{
+                'vi': {
                     'test': 'cc'
                 }
             }
         }
     }
 });
+app.mount('#app')

@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block html %}
+
+
+
+
+
+<h1 v-text="i18n[lang]['test']"></h1>
+
+
+
+
+
+
+
+{% endblock html %}
+
+
+
+
+{% block js %}
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock js %}

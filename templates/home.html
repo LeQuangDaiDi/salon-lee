@@ -1,10 +1,17 @@
 {% extends 'index.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock css %}
+
+
+
 
 {% block css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 {% endblock %}
 
 {% block html %}
+<<<<<<< HEAD
 <div class="container-fluid">
     <div class="ratio ratio-16x9">
         <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
@@ -55,6 +62,30 @@
     {% include 'navbar.html' %}
 </div>
 {% endblock %}
+=======
+{% include 'navbar.html' %}
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+{% endblock html %}
+>>>>>>> 44a0f5af440e265dab9bedab6bf06ffe342050bb
 
 {% block js %}
 <script src="{{ url_for('static', filename='index.js') }}"></script>

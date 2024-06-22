@@ -2,6 +2,7 @@
 
 {% block html %}
 <div class="container">
+<<<<<<< HEAD
     <div class="row">
         <div class="col-6 text-center" style="background-color: aqua;">
             <h1 v-text="i18n[lang]['home']"></h1>
@@ -13,6 +14,9 @@
             <img :src="getImage('{{url_for('static', filename='images/background/bg-1.jpg')}}')" class="img-fluid" alt="">
         </div>
     </div>
+=======
+    {% include 'navbar.html' %}
+>>>>>>> 3ee7c42ee770ce92fdddff59042025eeb6867ee8
 </div>
 {% endblock html %}
 

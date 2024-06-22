@@ -7,11 +7,15 @@ const app = createApp({
             i18n: {
                 'en': {
                     'home': 'Home',
-                    'content-1': 'OUR STUDIO'
+                    'content-1': 'OUR STUDIO',
+                    'navbarTitle': 'Lee Hair Salon',
+                    'Menu': 'Menu'
                 },
                 'vi': {
                     'home': 'Trang Chủ',
-                    'content-1': 'OUR STUDIO'
+                    'content-1': 'OUR STUDIO',
+                    'navbarTitle': 'Lee Hair Salon',
+                    'Menu': 'Menu'
                 }
             }
         }

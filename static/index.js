@@ -1,18 +1,10 @@
-const {createApp} = Vue;
-
-const app = createApp({
-    data(){
-        return {
-            lang: 'vi',
-            i18n: {
-                'en': {
-                    'test': 'Test'
-                },
-                'vi': {
-                    'test': 'cc'
-                }
-            }
-        }
+// JavaScript code for language button
+document.getElementById('languageBtn').addEventListener('click', function() {
+    // Toggle between Vietnamese and English
+    if (this.innerText === 'Tiếng Việt / English') {
+        this.innerText = 'English / Tiếng Việt';
+    } else {
+        this.innerText = 'Tiếng Việt / English';
     }
+    console.log('Language button clicked');
 });
-app.mount('#app')

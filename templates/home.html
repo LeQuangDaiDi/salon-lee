@@ -1,23 +1,33 @@
 {% extends 'index.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock css %}
+
+
+
 
 {% block html %}
-<div class="container">
-<<<<<<< HEAD
-    <div class="row">
-        <div class="col-6 text-center" style="background-color: aqua;">
-            <h1 v-text="i18n[lang]['home']"></h1>
-        </div>
-        <div class="col-6 text-center" style="background-color: rgb(0, 255, 42);">
-            <h1 v-text="getContent('home')"></h1>
-        </div>
-        <div class="col-12" class="img-fluid" >
-            <img :src="getImage('{{url_for('static', filename='images/background/bg-1.jpg')}}')" class="img-fluid" alt="">
-        </div>
-    </div>
-=======
-    {% include 'navbar.html' %}
->>>>>>> 3ee7c42ee770ce92fdddff59042025eeb6867ee8
-</div>
+{% include 'navbar.html' %}
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 {% endblock html %}
 
 {% block js %}

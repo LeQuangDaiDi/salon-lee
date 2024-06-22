@@ -7,15 +7,25 @@ const app = createApp({
             i18n: {
                 'en': {
                     'home': 'Home',
+                    'schedule': 'Schedule',
+                    'about': 'Schedule',
+                    'price': 'Price',
+                    'policy': 'Policy',
+                    'news': 'News',
                     'content-1': 'OUR STUDIO',
                     'navbarTitle': 'Lee Hair Salon',
-                    'Menu': 'Menu'
+                    'Close': 'Close'
                 },
                 'vi': {
                     'home': 'Trang Chủ',
+                    'schedule': 'Đặt hẹn',
+                    'about': 'Về chúng tôi',
+                    'price': 'Bảng giá dịch vụ',
+                    'policy': 'Chính sách bảo hành',
+                    'news': 'Tin tức',
                     'content-1': 'OUR STUDIO',
                     'navbarTitle': 'Lee Hair Salon',
-                    'Menu': 'Menu'
+                    'Close': 'Đóng'
                 }
             }
         }

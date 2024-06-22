@@ -6,86 +6,40 @@
 
 
 
-{% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-{% endblock %}
-
 {% block html %}
-<<<<<<< HEAD
 <div class="container-fluid">
-    <div class="ratio ratio-16x9">
-        <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
-        <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
-            <p class="card-text" v-text="getContent('content-H1')" ></p>
-            <h2 class="card-title display-4" v-text="getContent('content-H2')" ></h2>
-            <p class="card-text" v-text="getContent('content-H3')"></p>
-            <p class="card-text" v-text="getContent('content-H4')"></p>
+    <div class="row">
+        {% include 'navbar.html' %}
+
+    </div>
+    <div class="row" style="background-color: black; height: 50px; line-height: 50px;">
+        <div class="d-flex justify-content-center align-items-cente">
+            <p class="text-white" v-text="getContent('content-H25')" ></p>
+        </div>
+    </div>
+    <div class="row">
+        <img class="img" src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+        <div class="position-absolute mt-5">
+            <div class="d-flex justify-content-center">
+                <p class="text-white" v-text="getContent('content-H1')" ></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h2 class="text-white display-4 mt-5" v-text="getContent('content-H2')" ></h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="text-white" v-text="getContent('content-H3')"></p>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="text-white" v-text="getContent('content-H4')"></p>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
-    </div>    
-    <div class="container-fluid">
-        <figure>
-            <blockquote class="blockquote">
-                <h2 class=" display-5" v-text="getContent('content-H6')" ></h2>
-                <p class="" v-text="getContent('content-H7')" ></p>
-            </blockquote>
-          </figure>
-        <div class="ratio ratio-16x9">
-            <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
-            <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
-                <p class="card-text" v-text="getContent('content-H1')" ></p>
-                <h3 class="card-title display-4" v-text="getContent('content-H2')" ></h3>
-                <p class="card-text" v-text="getContent('content-H3')"></p>
-                <p class="card-text" v-text="getContent('content-H4')"></p>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
-        </div>   
-        <div class="container-fluid">
-            <div class="ratio ratio-16x9">
-                <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
-                <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
-                    <p class="card-text" v-text="getContent('content-H1')" ></p>
-                    <h5 class="card-title display-4" v-text="getContent('content-H2')" ></h5>
-                    <p class="card-text" v-text="getContent('content-H3')"></p>
-                    <p class="card-text" v-text="getContent('content-H4')"></p>
-                </div>
-            </div>
-        
-            <div class="container-fluid">
-                <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
-            </div>   
-    {% include 'navbar.html' %}
-</div>
-{% endblock %}
-=======
-{% include 'navbar.html' %}
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 {% endblock html %}
->>>>>>> 44a0f5af440e265dab9bedab6bf06ffe342050bb
+
+
+
 
 {% block js %}
 <script src="{{ url_for('static', filename='index.js') }}"></script>

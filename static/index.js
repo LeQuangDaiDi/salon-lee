@@ -7,7 +7,6 @@ const app = createApp({
             i18n: {
                 'en': {
                     'home': 'Home',
-<<<<<<< HEAD
                     'content-H1': 'OUR STUDIO',
                     'navbarTitle': 'Lee Hair Salon',
                     'Menu': 'Menu',
@@ -34,6 +33,7 @@ const app = createApp({
                     'content-H22':'Socials',
                     'content-H23':'Address',
                     'content-H24':'331 Tran Hung Dao, Co Giang Ward, District 1, Ho Chi Minh City',
+                    'content-H25':'PRESTIGE - QUALITY - SERVICE & AESTHETICS ARE THE TOP PRIORITIES THAT LEE HAIR SALON PUTS ON TOP',
 
                 },
                 'vi': {
@@ -64,29 +64,9 @@ const app = createApp({
                     'content-H22':'Socials',
                     'content-H23':'Địa chỉ',
                     'content-H24':'331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh',
-
-=======
-                    'schedule': 'Schedule',
-                    'about': 'Schedule',
-                    'price': 'Price',
-                    'policy': 'Policy',
-                    'news': 'News',
-                    'content-1': 'OUR STUDIO',
-                    'navbarTitle': 'Lee Hair Salon',
-                    'Close': 'Close'
-                },
-                'vi': {
-                    'home': 'Trang Chủ',
-                    'schedule': 'Đặt hẹn',
-                    'about': 'Về chúng tôi',
-                    'price': 'Bảng giá dịch vụ',
-                    'policy': 'Chính sách bảo hành',
-                    'news': 'Tin tức',
-                    'content-1': 'OUR STUDIO',
-                    'navbarTitle': 'Lee Hair Salon',
-                    'Close': 'Đóng'
->>>>>>> 44a0f5af440e265dab9bedab6bf06ffe342050bb
+                    'content-H25':'UY TÍN - CHẤT LƯỢNG - DỊCH VỤ & THẨM MỸ LÀ NHỮNG TIÊU CHÍ MÀ LEE HAIR SALON ĐẶT LÊN HÀNG ĐẦU',
                 }
+                
             }
         }
     },

@@ -1,68 +1,12 @@
-<<<<<<< HEAD
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-.ratio-16x9 {
-    position: relative;
+.img{
     width: 100%;
-    min-height: 90vh; /* Chiều cao là 90% của viewport */
-    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài khung */
-    display: flex; /* Sử dụng flexbox để căn giữa */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    margin-bottom: -50px; /* Đẩy hình ảnh lên trên */
+    height: 550px;
+    object-fit: cover;
+    z-index: -1;
 }
-
-.ratio-16x9 img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Đảm bảo hình ảnh bao phủ đầy đủ không bị căn chỉnh */
-    z-index: -1; /* Đẩy hình ảnh xuống phía sau */
+.content{
+    line-height: 550px; 
 }
-
-.full-width-container {
-    background-color: black; /* Màu nền đen */
-    color: white; /* Màu chữ trắng */
-    width: 100%; /* Toàn bộ chiều rộng */
-    display: flex; /* Sử dụng flexbox để căn giữa */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    min-height: 10vh; /* Chiều cao tối thiểu là 10% của viewport */
-    margin-top: -50px; /* Đẩy nội dung lên để nằm ngay dưới hình ảnh */
-}
-
-.card-title, .card-text {
-    margin-bottom: 30px;
-}
-
-.card-title {
-    font-size: 2rem; /* Cỡ chữ lớn */
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1.5rem; /* Cỡ chữ vừa */
-}
-
-
-=======
 .menu-bg{
     background-image: url('./images/background/bg-14.jpg');
     padding: 30px;
@@ -74,12 +18,14 @@ body {
 }
 .body{
     font-family: 'Roboto',sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0;
     margin: 0;
+    
 }
-.img-fluid{
-    width: 100%;
-    height: 80%;
+.container-fluid{
+    --bs-gutter-x: 0rem;
 }
->>>>>>> 44a0f5af440e265dab9bedab6bf06ffe342050bb
+*{
+    overflow: hidden;
+}

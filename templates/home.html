@@ -1,25 +1,61 @@
 {% extends 'index.html' %}
 
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+
 {% block html %}
-<div class="container">
-<<<<<<< HEAD
-    <div class="row">
-        <div class="col-6 text-center" style="background-color: aqua;">
-            <h1 v-text="i18n[lang]['home']"></h1>
-        </div>
-        <div class="col-6 text-center" style="background-color: rgb(0, 255, 42);">
-            <h1 v-text="getContent('home')"></h1>
-        </div>
-        <div class="col-12" class="img-fluid" >
-            <img :src="getImage('{{url_for('static', filename='images/background/bg-1.jpg')}}')" class="img-fluid" alt="">
+<div class="container-fluid">
+    <div class="ratio ratio-16x9">
+        <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+        <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
+            <p class="card-text" v-text="getContent('content-H1')" ></p>
+            <h2 class="card-title display-4" v-text="getContent('content-H2')" ></h2>
+            <p class="card-text" v-text="getContent('content-H3')"></p>
+            <p class="card-text" v-text="getContent('content-H4')"></p>
         </div>
     </div>
-=======
+
+    <div class="container-fluid">
+        <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
+    </div>    
+    <div class="container-fluid">
+        <figure>
+            <blockquote class="blockquote">
+                <h2 class=" display-5" v-text="getContent('content-H6')" ></h2>
+                <p class="" v-text="getContent('content-H7')" ></p>
+            </blockquote>
+          </figure>
+        <div class="ratio ratio-16x9">
+            <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
+                <p class="card-text" v-text="getContent('content-H1')" ></p>
+                <h3 class="card-title display-4" v-text="getContent('content-H2')" ></h3>
+                <p class="card-text" v-text="getContent('content-H3')"></p>
+                <p class="card-text" v-text="getContent('content-H4')"></p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
+        </div>   
+        <div class="container-fluid">
+            <div class="ratio ratio-16x9">
+                <img src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+                <div class="card-img-overlay d-flex flex-column justify-content-center text-center text-white">
+                    <p class="card-text" v-text="getContent('content-H1')" ></p>
+                    <h5 class="card-title display-4" v-text="getContent('content-H2')" ></h5>
+                    <p class="card-text" v-text="getContent('content-H3')"></p>
+                    <p class="card-text" v-text="getContent('content-H4')"></p>
+                </div>
+            </div>
+        
+            <div class="container-fluid">
+                <div class="full-width-container card-title" v-text="getContent('content-H5')"></div>
+            </div>   
     {% include 'navbar.html' %}
->>>>>>> 3ee7c42ee770ce92fdddff59042025eeb6867ee8
 </div>
-{% endblock html %}
+{% endblock %}
 
 {% block js %}
 <script src="{{ url_for('static', filename='index.js') }}"></script>
-{% endblock js %}
+{% endblock %}

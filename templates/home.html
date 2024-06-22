@@ -1,23 +1,20 @@
 {% extends 'index.html' %}
 
 {% block html %}
-
-
-
-
-
-<h1 v-text="i18n[lang]['test']"></h1>
-
-
-
-
-
-
-
+<div class="container">
+    <div class="row">
+        <div class="col-6 text-center" style="background-color: aqua;">
+            <h1 v-text="i18n[lang]['home']"></h1>
+        </div>
+        <div class="col-6 text-center" style="background-color: rgb(0, 255, 42);">
+            <h1 v-text="getContent('home')"></h1>
+        </div>
+        <div class="col-12" class="img-fluid" >
+            <img :src="getImage('{{url_for('static', filename='images/background/bg-1.jpg')}}')" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
 {% endblock html %}
-
-
-
 
 {% block js %}
 <script src="{{ url_for('static', filename='index.js') }}"></script>

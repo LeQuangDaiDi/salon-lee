@@ -10,38 +10,38 @@
     </div>
     <div class="row bg-black" style="height: 90px;">
         <div class="col d-flex justify-content-center align-items-center">
-            <h4 class="fw-bold text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h4>
+            <h4 class=" overflow-hidden fw-bold text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h4>
         </div>
     </div>
     <div class="row position-relative m-0">
         <img class="img-fluid w-100" style="object-fit: cover; height: 100vh;" :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
-                <p class="text-white fs-3" v-text="getContent('content-H1')"></p>
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H1')"></p>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <h2 class="text-white display-2 fw-bold " v-text="getContent('content-H2')"></h2>
+                <h2 class="overflow-hidden text-white display-2 fw-bold " v-text="getContent('content-H2')"></h2>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <p class="text-white fs-3" v-text="getContent('content-H3')"></p>
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H3')"></p>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <p class="text-white fs-3" v-text="getContent('content-H4')"></p>
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H4')"></p>
             </div>
         </div>
     </div>    
 
 <!-- Hung update -->
     <div class="row bg-black" style="height: 70px; line-height: 70px;">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h3 class="fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H5')"></h3>
+        <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
+            <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H5')"></h3>
         </div>
     </div>
 <!-- Cắt thiết kế -->
     <div class="row position-relative mt-5">
-        <div class="col d-flex flex-column justify-content-center align-items-center">
-            <h6 class="fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
-            <p class="fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H7')"></p>
+        <div class="overflow-hidden col d-flex flex-column justify-content-center align-items-center">
+            <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
+            <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H7')"></p>
         </div>
     </div>
     <div class="container">
@@ -67,8 +67,8 @@
                 <div class="row mb-5 mt-3">
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
-                            <h3 class="fs-2 fw-bold text-dark m-0 mt-5" v-text="getContent('content-H8')"></h3>
-                            <p class="text-dark mt-3" v-text="getContent('content-H9')"></p>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-5" v-text="getContent('content-H8')"></h3>
+                            <p class="overflow-hidden text-dark mt-3" v-text="getContent('content-H9')"></p>
                         </div>
                     </div>
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
@@ -105,13 +105,13 @@
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
                         <div>
-                            <h3 class="fs-2 fw-bold text-dark m-0 mt-1" v-text="getContent('content-H10')"></h3>
-                            <p class="text-dark mt-3" v-text="getContent('content-H11')"></p>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-1" v-text="getContent('content-H10')"></h3>
+                            <p class="overflow-hidden text-dark mt-3" v-text="getContent('content-H11')"></p>
                         </div>
                     </div>
                     <div class="order-2 order-md-2 align-items-center mt-3">
                         <div>
-                            <h3 class="fs-3 text-dark" v-text="getContent('content-H12')"></h3>
+                            <h3 class="overflow-hidden fs-3 text-dark" v-text="getContent('content-H12')"></h3>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
         </div>
         <div class="row bg-black mt-5 " style="height: 70px; line-height: 70px;">
             <div class="col d-flex justify-content-center align-items-center">
-                <h3 class="fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H13')"></h3>
+                <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H13')"></h3>
             </div>
         </div>
     </div>
@@ -127,39 +127,45 @@
     <div class="container-fluid text-center">
         <div class="row position-relative mt-5">
             <div class="col d-flex flex-column justify-content-center align-items-center">
-                <h6 class="fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
-                <p class="fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H15')"></p>
+                <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
+                <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H15')"></p>
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-3 row-cols-md-5 g-2">
+            <div class="row row-cols-3 row-cols-md-5 pd-1 g-2">
                 <div class="col">
-                    <img class="  img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1">
                 </div>
                 <div class="col">
-                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <img class="  img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2">
                 </div>
                 <div class="col">
-                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_4.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls></video>
                 </div>
                 <div class="col">
-                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                    <img class=" img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_3.jpg')}}')" alt="Image 3">
                 </div>
+                <div class=" order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center  ">
+                    <div>
+                        <h3 class="overflow-hidden d-flex justify-content-center mt-3" v-text="getContent('content-H16')"></h3>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

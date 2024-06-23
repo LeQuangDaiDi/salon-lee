@@ -48,7 +48,14 @@
     padding-left: calc(10%);
     padding-right: calc(10%);
 }
-
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gallery .col {
+    padding: 5px;
+  }
 @media (max-width: 768px) {
     .img-fluid-mobile {
         max-height: 70vh; 
@@ -58,9 +65,14 @@
         height: auto;
         margin-bottom: 1px;
     }
+    .custom-img-size-1 {
+        max-width: 100%; 
+        height: auto;
+    }
     .responsive-text {
         font-size: 4vw; /* Kích thước chữ thay đổi theo chiều rộng của viewport */
     }
+    
 
 }
 

@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="row position-relative m-0">
-        <img class="img-fluid w-100" style="object-fit: cover; height: 100vh;" src="{{ url_for('static', filename='images/background/bg-1.jpg') }}" alt="Background Image">
+        <img class="img-fluid w-100" style="object-fit: cover; height: 100vh;" :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
                 <p class="text-white fs-3" v-text="getContent('content-H1')"></p>
@@ -45,18 +45,18 @@
         </div>
     </div>
     <div class="container">
-        <div class="row row-cols-2 row-cols-md-4 g-2">
+        <div class="row row-cols-2 row-cols-md-4 g-2 ">
             <div class="col">
-                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg') }}" alt="Image 1">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg')}}')"  alt="Image 1">
             </div>
             <div class="col">
-                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg') }}" alt="Image 2">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg')}}')" alt="Image 2">
             </div>
             <div class="col">
-                <img class="p-2 img-thumbnail img-fluid " src="{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg') }}" alt="Image 3">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg')}}')" alt="Image 3">
             </div>
             <div class="col">
-                <img class="p-2 img-thumbnail img-fluid" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                <img class="p-1 img-fluid" :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg')}}')" alt="Image 4">
             </div>
         </div>
     </div>
@@ -72,17 +72,17 @@
                         </div>
                     </div>
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/dye/_frame4_img1.jpg') }}" alt="Image 1">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size"  :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img1.jpg')}}')" alt="Image 1">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/dye/_frame4_img2.jpg') }}" alt="Image 2">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img2.jpg')}}')" alt="Image 2">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/dye/_frame4_img3.jpg') }}" alt="Image 3">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img3.jpg')}}')" alt="Image 3">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/dye/_frame4_img4.jpg') }}" alt="Image 4">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img4.jpg')}}')" alt="Image 4">
                         </div>
                     </div>
                 </div>
@@ -90,17 +90,17 @@
                 <!-- Phần dưới: Nội dung bên trái, hình ảnh bên phải -->
                 <div class="row flex-row-reverse mt-3">
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/perm-straight/_frame5_img1.jpg') }}" alt="Image 1">
+                        <div class="col-6 ">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img1.jpg')}}')" alt="Image 1">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/perm-straight/_frame5_img2.jpg') }}" alt="Image 2">
+                        <div class="col-6 ">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img2.jpg')}}')" alt="Image 2">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/perm-straight/_frame5_img3.jpg') }}" alt="Image 3">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img3.jpg')}}')" alt="Image 3">
                         </div>
-                        <div class="col-6 p-2">
-                            <img class="img-thumbnail img-fluid custom-img-size" src="{{ url_for('static', filename='images/perm-straight/_frame5_img4.jpg') }}" alt="Image 4">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img4.jpg')}}')" alt="Image 4">
                         </div>
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
@@ -124,14 +124,44 @@
         </div>
     </div>
 <!-- @LEE.HAIR -->
-    <div class="container-fluid">
+    <div class="container-fluid text-center">
         <div class="row position-relative mt-5">
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <h6 class="fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
                 <p class="fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H15')"></p>
             </div>
         </div>
-        
+        <div class="container">
+            <div class="row row-cols-3 row-cols-md-5 g-2">
+                <div class="col">
+                    <img class="  img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1">
+                </div>
+                <div class="col">
+                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
+                </div>
+                <div class="col">
+                    <img class="  img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2">
+                </div>
+                <div class="col">
+                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
+                </div>
+                <div class="col">
+                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
+                </div>
+                <div class="col">
+                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                </div>
+                <div class="col">
+                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                </div>
+                <div class="col">
+                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                </div>
+                <div class="col">
+                    <img class="img-fluid custom-img-size-1" src="{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg') }}" alt="Image 4">
+                </div>
+            </div>
+        </div>
     </div>
 <!-- continue -->
 

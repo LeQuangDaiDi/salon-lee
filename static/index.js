@@ -77,7 +77,7 @@ const app = createApp({
                     'content-H19':'Liên hệ và đặt lịch với Salon',
                     'content-H20':'Đặt lịch ngay',
                     'content-H21':'Hotline',
-                    'content-H22':'📞0903617376 📞0908679635',
+                    'content-H22':'📞0903617376   📞0908679635',
                     'content-H23':'Socials',
                     'content-H24':'Địa chỉ',
                     'content-H25':'331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh',
@@ -103,6 +103,7 @@ const app = createApp({
     }
     
 }});
+
 
 
 app.mount('#app');

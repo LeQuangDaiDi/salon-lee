@@ -91,6 +91,7 @@ padding: 5px;
     
     .maps{
         min-width: 100%;
+        max-height: 100%;
     }
 
     .custom-iframe iframe {
@@ -162,4 +163,7 @@ html{
 .maps{
     width: 60%;
     height: 100%;
+}
+.color-fb{
+    color: white;
 }

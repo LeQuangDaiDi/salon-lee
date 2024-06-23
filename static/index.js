@@ -7,6 +7,12 @@ const app = createApp({
             i18n: {
                 'en': {
                     'home': 'Home',
+                    'Close': 'Close',
+                    'schedule': 'Schedule',
+                    'aboutUs': 'About Us',
+                    'price': 'Price',
+                    'policy': 'Policy',
+                    'news': 'News',
                     'navbarTitle': 'LEE HAIR SALON',
                     'Menu': 'Menu',
                     'content-H0':'PRESTIGE - QUALITY - SERVICE & AESTHETICS ARE THE TOP PRIORITIES THAT LEE HAIR SALON PUTS ON TOP',
@@ -41,6 +47,12 @@ const app = createApp({
                 },
                 'vi': {
                     'home': 'Trang Chủ',
+                    'Close': 'Đóng',
+                    'schedule': 'Đặt Hẹn',
+                    'aboutUs': 'Về Chúng Tôi',
+                    'price': 'Bảng Giá Dịch Vụ',
+                    'policy': 'Chính Sách Bảo Hành',
+                    'news': 'Tin Tức',
                     'navbarTitle': 'LEE HAIR SALON',
                     'Menu': 'Menu',
                     'content-H0':'UY TÍN - CHẤT LƯỢNG - DỊCH VỤ & THẨM MỸ LÀ NHỮNG TIÊU CHÍ MÀ LEE HAIR SALON ĐẶT LÊN HÀNG ĐẦU',

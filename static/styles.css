@@ -79,4 +79,21 @@
 /* Loại bỏ overflow: hidden; trên tất cả các phần tử */
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: rgb(92, 92, 92);
+border-radius: 10px;
 }

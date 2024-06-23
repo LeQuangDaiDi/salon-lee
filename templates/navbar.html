@@ -1,12 +1,12 @@
 <nav class="navbar menu-bg ">
   <div class="container-fluid">
       <div class="d-flex align-items-center">
-          <button class="navbar-toggler ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <a class="fs-2 fw-bold navbar-brand mx-auto font-raleway" href="#" v-text="getContent('navbarTitle')" style="margin-right: 70px;"></a>
-          <div class="me-5" @click="switchLanguage()">
+          <div class="me-3" @click="switchLanguage()">
               <img v-if="lang === 'en'" :src="getImage('{{ url_for('static', filename='images/logo/vn.png') }}')" alt="" width="45" height="25">
               <img v-if="lang === 'vi'" :src="getImage('{{ url_for('static', filename='images/logo/en.png') }}')" alt="" width="45" height="25">
           </div>

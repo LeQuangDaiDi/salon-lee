@@ -4,8 +4,9 @@
 {% endblock css %}
 
 {% block html %}
-<div class="container-fluid p-0">
-    <div class="row">
+<div class="container-fluid">
+
+    <div class="row overflow-hidden">
         {% include 'navbar.html' %}
     </div>
     <div class="row bg-black" style="height: 90px;">
@@ -14,7 +15,7 @@
         </div>
     </div>
     <div class="row position-relative">
-        <img class="img"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
+        <img class="img w-100"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
                 <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H1')"></p>
@@ -38,10 +39,11 @@
         </div>
     </div>
 <!-- Cắt thiết kế -->
-    <div class="row position-relative mt-5">
-        <div class="overflow-hidden col d-flex flex-column justify-content-center align-items-center">
-            <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
-            <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H7')"></p>
+    <div class="row position-relative mt-5" >
+        <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+            <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
+            <!-- <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2 m-1" v-text="getContent('content-H7')"></p> -->
+            <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H7')"></p>
         </div>
     </div>
     <div class="container">

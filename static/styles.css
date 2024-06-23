@@ -11,7 +11,7 @@
 
 .menu-bg {
     background-image: url('./images/background/bg-14.jpg');
-    padding: 20px 20px;
+    padding: 20px;
 
 }
 
@@ -21,10 +21,10 @@
     font-size: 25px;
 }
 
-.body {
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding: 0;
+    padding: 0 !important;
     margin: 0;
     overflow-x: hidden;
 }
@@ -47,16 +47,16 @@
 
 .position-relative .col {
     padding-left: calc(10%);
-    padding-right: calc(10%);
+    ing-right: calc(10%);
 }
 .gallery img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  .gallery .col {
-    padding: 5px;
-  }
+}
+.gallery .col {
+padding: 5px;
+}
 @media (max-width: 768px) {
     .img-fluid-mobile {
         max-height: 70vh; 
@@ -96,7 +96,12 @@ background: rgb(92, 92, 92);
 border-radius: 10px;
 }
 
-*{
+/* *{
     overflow-x: hidden;
     padding: 0;
+} */
+
+html{
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
 }

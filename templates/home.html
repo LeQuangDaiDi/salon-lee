@@ -42,7 +42,6 @@
     <div class="row position-relative mt-5" >
         <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
             <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
-            <!-- <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2 m-1" v-text="getContent('content-H7')"></p> -->
             <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H7')"></p>
         </div>
     </div>
@@ -127,10 +126,10 @@
     </div>
 <!-- @LEE.HAIR -->
     <div class="container-fluid text-center">
-        <div class="row position-relative mt-5">
-            <div class="col d-flex flex-column justify-content-center align-items-center">
-                <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
-                <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H15')"></p>
+        <div class="row position-relative mt-5" >
+            <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
+                <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H15')"></p>
             </div>
         </div>
         <div class="container">
@@ -172,21 +171,71 @@
     </div>
 <!-- Hung Update -->
     <div class="container-fluid bg-light mt-5">
-        <div class="row position-relative mt-5">
-            <div class="overflow-hidden col d-flex flex-column justify-content-center align-items-center">
-                <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H17')"></h6>
-                <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H18')"></p>
+        <div class="row">
+            <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3 mt-5" v-text="getContent('content-H17')"></h6>
+                <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H18')"></p>
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 g-2">
-              <div class="col">
-                <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-4.jpg')}}')" alt="Image 1">
-              </div>
-              <div class="col order-md-1">
-                <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-7.jpg')}}')" alt="Image 2">
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                        <div class="col">
+                        <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-4.jpg')}}')" alt="Image 1">
+                        </div>
+                        <div class="col order-md-1">
+                        <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-7.jpg')}}')" alt="Image 2">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="mt-5"></div>
+    </div>
+
+<!-- Phần cuối  -->
+    <div class="container-fluid bg-dark text-white py-5">
+        <div class="row ms-5">
+            <div class="col align-items-center ms-5">
+                <h5 class="overflow-hidden text-white mt-3" v-text="getContent('content-H19')"></h5>
+                <a :href="getImage('https://booking.easysalon.vn/leehairsalonq1')" class="btn btn-light custom-btn" tabindex="-1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
+                <h5 class="overflow-hidden text-white mt-4" v-text="getContent('content-H21')"></h5>
+                <p v-text="getContent('content-H22')"></p>
+                <h5 class="overflow-hidden text-white mt-4" v-text="getContent('content-H23')"></h5>
+                <i class="bi bi-facebook "></i>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+            <!-- <p class="scroll-loading position-top-40-fix-1 position-left-15-fix-7 font-roboto-500 font-size-150-fix">
+                📞0903617376
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                📞0908679635
+            </p>
+            <h1 class="scroll-loading position-top-47-fix position-left-15-fix-8 font-raleway-700 font-size-150-fix">
+                Socials --> -->
+            <!-- </h1>
+            <a class="position-top-52-fix position-left-15-fix-9" href="https://www.facebook.com/hairsalonleephat/" target="_blank">
+                <img class="scroll-loading img-size-5" src="../static/images/logo/facebook.png" loading="lazy">
+            </a> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="position-top-52-fix-1 position-left-18-fix " href="https://www.instagram.com/lee.hair.salon/" target="_blank">
+                <img class="scroll-loading img-size-5 " src="../static/images/logo/instagram.png" loading="lazy">
+            </a>
+            <h1 class="scroll-loading position-top-60-fix-1 position-left-15-fix-10 font-raleway-700 font-size-150-fix">
+                Địa chỉ
+            </h1>
+            <p class="scroll-loading position-top-65-fix position-left-15-fix-11 font-roboto-400 font-size-150-fix">
+                331 Trần Hưng Đạo, P. Cô Giang, Q.1, TP.HCM (không chi nhánh)
+            </p> -->
+            <!-- <div class="position-top-20-fix-3 position-left-60-fix">
+            <iframe class="scroll-loading img-size-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62714.36512882214!2d106.61374354863281!3d10.761602000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f996fe9aeb3%3A0xe3b90a9306a1f228!2sLee%20Hair%20Salon!5e0!3m2!1svi!2s!4v1714388770401!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+        </div>
     </div>
 <!-- continue -->
 

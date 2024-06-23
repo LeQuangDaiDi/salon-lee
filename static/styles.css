@@ -101,13 +101,6 @@ background: rgb(92, 92, 92);
 border-radius: 10px;
 }
 
-*{
-    overflow-x: hidden;
-    padding: 0;
-<<<<<<< HEAD
-}
-=======
-} */
 
 html{
     overflow-x: hidden !important;
@@ -117,5 +110,3 @@ html{
     background-image: url('./images/background/bg-14.jpg');
     background-size: cover !important;
 }
-
->>>>>>> cc424c7a7ed0ffe1518f41cd3ac36bdf0947bdd8

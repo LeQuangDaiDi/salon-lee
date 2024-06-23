@@ -165,9 +165,26 @@
                         <h3 class="overflow-hidden d-flex justify-content-center mt-3" v-text="getContent('content-H16')"></h3>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
+<!-- Hung Update -->
+    <div class="container-fluid bg-light mt-5">
+        <div class="row position-relative mt-5">
+            <div class="overflow-hidden col d-flex flex-column justify-content-center align-items-center">
+                <h6 class="overflow-hidden fs-2 fw-bold text-dark text-center mb-3" v-text="getContent('content-H17')"></h6>
+                <p class="overflow-hidden fs-5 text-dark lh-base text-center mt-2" v-text="getContent('content-H18')"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+              <div class="col">
+                <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-4.jpg')}}')" alt="Image 1">
+              </div>
+              <div class="col order-md-1">
+                <img class="p-1 img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/background/bg-7.jpg')}}')" alt="Image 2">
+              </div>
+            </div>
     </div>
 <!-- continue -->
 

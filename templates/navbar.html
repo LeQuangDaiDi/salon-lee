@@ -1,4 +1,4 @@
-<nav class="navbar menu-bg d">
+<nav class="navbar menu-bg overflow-hidden">
   <div class="container-fluid">
       <div class="d-flex align-items-center">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -11,11 +11,11 @@
               <img v-if="lang === 'vi'" :src="getImage('{{ url_for('static', filename='images/logo/en.png') }}')" alt="" width="45" height="25">
           </div>
       </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-start overflow-hidden" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
           <div class="d-flex align-items-center mt-3">
               <h5 class="offcanvas-title overflow-hidden" id="offcanvasNavbarLabel" v-text="getContent('Close')"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close overflow-hidden" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           
       </div>

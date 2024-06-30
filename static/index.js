@@ -42,6 +42,8 @@ const app = createApp({
                     'content-H24': 'Address',
                     'content-H25':'331 Tran Hung Dao, Co Giang Ward, District 1, Ho Chi Minh City',
                     'content-H26':'PRESTIGE - QUALITY - SERVICE & AESTHETICS ARE THE CRITERIA WHICH LEE HAIR SALON PUT ON EVERYTHING',
+                    'content-H27': 'The Space & The Team',
+                    'content-H28': 'SYSTEM  HAIR  STYLIST',
 
 
                 },
@@ -82,6 +84,14 @@ const app = createApp({
                     'content-H24':'Địa chỉ',
                     'content-H25':'331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh',
                     'content-H26':'UY TÍN - CHẤT LƯỢNG - DỊCH VỤ & THẨM MỸ LÀ NHỮNG TIÊU CHÍ MÀ LEE HAIR SALON ĐẶT LÊN HÀNG ĐẦU',
+                    'content-H27': 'KHÔNG GIAN & ĐỘI NGŨ',
+                    'content-H28': 'HỆ  THỐNG  HAIR  STYLIST',
+                    'content-H29': 'Được dẫn dắt bởi chuyên gia tạo mẫu tóc -  CEO Mr. Lee,với hơn 12 năm kinh nghiệm và sự khắc khe trong kỹ thuật, đội ngũ nhân sự tại Behind The Chair luôn được chọn lọc kỹ càng từ đầu vào. Training liên tục và luôn cập nhập các kỹ thuật mới nhằm mang đến cho khách hàng một sản phẩm chất lượng và trải nghiệm tốt nhất!',
+                    'content-H30': 'SENIOR STYLIST',
+                    'content-H31': 'Kinh nghiệm từ 5 năm+',
+                    'content-H32': '',
+                    'content-H33': '',
+                    'content-H34': '',
                 }
                 
             }

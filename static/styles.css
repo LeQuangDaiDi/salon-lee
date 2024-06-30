@@ -4,7 +4,10 @@
     object-fit: cover;
     z-index: -1;
 }
-
+.img_v2{
+    width: 600px;
+    height: 600px;
+}
 .content {
     line-height: 550px;
 }

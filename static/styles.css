@@ -5,6 +5,13 @@
     z-index: -1;
 }
 
+.bg-gray{
+    background-color: rgb(238, 237, 237);
+}
+.bg-misty-rose-lighter {
+    background-color: rgba(245, 229, 227, 0.877);
+}
+
 .content {
     line-height: 550px;
 }
@@ -29,7 +36,18 @@ body {
     overflow-x: hidden;
 }
 
-.container-fluid, .img-fluid {
+.container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+ .img-fluid {
     margin-right: 0;
     margin-left: 0;
     padding-right: 0;

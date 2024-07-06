@@ -10,9 +10,9 @@
     <div class="row overflow-hidden fixed-top">
         {% include 'navbar.html' %}
     </div>
-    <div class="row bg-black" style="height: 100px;">
-        <div class="  col d-flex justify-content-center align-items-center">
-            <h4 class="overflow-hidden fw-bold text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h4>
+    <div class="row bg-black" style="height: 60px;">
+        <div class="col d-flex justify-content-center align-items-center">
+            <h5 class="overflow-hidden text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h5>
         </div>
     </div>
     <div class="row position-relative">
@@ -46,7 +46,7 @@
             <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H7')"></p>
         </div>
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="row row-cols-2 row-cols-md-4 g-2 ">
             <div class="col">
                 <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg')}}')"  alt="Image 1">
@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light mt-5">
+    <div class="container-fluid bg-gray mt-5">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 80%;">
                 <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
@@ -70,7 +70,7 @@
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
                             <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-5" v-text="getContent('content-H8')"></h3>
-                            <p class="overflow-hidden text-dark mt-3" v-text="getContent('content-H9')"></p>
+                            <p class=" row overflow-hidden text-dark mt-3" v-text="getContent('content-H9')"></p>
                         </div>
                     </div>
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
@@ -169,7 +169,7 @@
         </div>
     </div>
     <!-- Hung Update -->
-    <div class="container-fluid bg-light mt-5">
+    <div class="container-fluid bg-gray mt-5">
         <div class="row">
             <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3 mt-5" v-text="getContent('content-H17')"></h6>

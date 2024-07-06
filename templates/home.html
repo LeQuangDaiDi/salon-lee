@@ -69,8 +69,8 @@
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
-                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-5" v-text="getContent('content-H8')"></h3>
-                            <p class=" row overflow-hidden text-dark mt-3" v-text="getContent('content-H9')"></p>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-5 text-center" v-text="getContent('content-H8')"></h3>
+                            <p class=" row overflow-hidden text-dark mt-3 text-reponsive" v-text="getContent('content-H9')"></p>
                         </div>
                     </div>
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
@@ -107,13 +107,13 @@
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
                         <div>
-                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-1" v-text="getContent('content-H10')"></h3>
-                            <p class="overflow-hidden text-dark mt-3" v-text="getContent('content-H11')"></p>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark m-0 mt-1 text-center " v-text="getContent('content-H10')"></h3>
+                            <p class="overflow-hidden text-dark mt-3 text-reponsive" v-text="getContent('content-H11')"></p>
                         </div>
                     </div>
-                    <div class="order-2 order-md-2 align-items-center mt-3">
+                    <div class=" row order-2 order-md-2 align-items-center mt-5">
                         <div>
-                            <h3 class="overflow-hidden fs-3 text-dark" v-text="getContent('content-H12')"></h3>
+                            <h3 class="overflow-hidden fs-3 text-center text-dark mt-5" v-text="getContent('content-H12')"></h3>
                         </div>
                     </div>
                 </div>
@@ -134,39 +134,39 @@
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-3 row-cols-md-5 pd-1 g-2">
-                <div class="col">
+            <div class="row row-cols-3 row-cols-md-5 g-2">
+                <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1">
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2">
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_4.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
-                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls></video>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
-                    <video class="img-fluid custom-img-size-1  " :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls></video>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls></video>
                 </div>
-                <div class="col">
-                    <img class=" img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='video/img_3.jpg')}}')" alt="Image 3">
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_3.jpg')}}')" alt="Image 3">
                 </div>
-                <div class=" col order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center  ">
-                    <h3 class="overflow-hidden  mt-3 text-sm-center text-center" v-text="getContent('content-H16')"></h3>
+                <div class="col-12 order-last order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center">
+                    <h3 class="overflow-hidden mt-3 text-center" v-text="getContent('content-H16')"></h3>
                 </div>
             </div>
-        </div>
+        </div>     
     </div>
     <!-- Hung Update -->
     <div class="container-fluid bg-gray mt-5">

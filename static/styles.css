@@ -63,6 +63,20 @@ body {
     object-fit: cover; 
 }
 
+ .img-fluid-1 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+.content-center-1{
+    width: 300px;
+}
+
 
 .position-relative {
     position: relative;
@@ -76,7 +90,21 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+.avatar-img {
+    max-width: 100%;
+    height: auto;
+}
 
+.signature-img {
+    position: absolute;
+    bottom: -30px; /* Điều chỉnh khoảng cách từ đáy ảnh */
+    right: 0;
+}
+
+
+.content-container {
+    position: relative;
 }
 .gallery .col {
 padding: 5px;
@@ -110,7 +138,10 @@ padding: 5px;
     .offcanvas{
         height: 50%;
     }
-
+    .signature-img {
+        bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh cho thiết bị di động */
+        right: 0; /* Điều chỉnh khoảng cách từ bên phải ảnh cho thiết bị di động */
+    }
     .maps{
         min-width: 100%;
         max-height: 100%;

@@ -4,12 +4,11 @@
     object-fit: cover;
     z-index: -1;
 }
-<<<<<<< HEAD
+
 .img_v2{
     width: 600px;
     height: 600px;
 }
-=======
 
 .bg-gray{
     background-color: rgb(238, 237, 237);
@@ -18,7 +17,6 @@
     background-color: rgba(245, 229, 227, 0.877);
 }
 
->>>>>>> hung
 .content {
     line-height: 550px;
 }
@@ -72,7 +70,7 @@ body {
 
 .position-relative .col {
     padding-left: calc(10%);
-    ing-right: calc(10%);
+    padding-right: calc(10%);
 }
 .gallery img {
     width: 100%;

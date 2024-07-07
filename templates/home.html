@@ -10,13 +10,13 @@
     <div class="row overflow-hidden fixed-top">
         {% include 'navbar.html' %}
     </div>
-    <div class="row bg-black" style="height: 60px;">
+    <div class="row bg-black" style="height: 80px;">
         <div class="col d-flex justify-content-center align-items-center">
             <h5 class="overflow-hidden text-white text-center m-0 responsive-text" v-text="getContent('content-H0')"></h5>
         </div>
     </div>
     <div class="row position-relative">
-        <img class="img w-100"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
+        <img class="d-flex img w-100"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
                 <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H1')"></p>

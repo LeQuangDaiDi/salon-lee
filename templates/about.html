@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 order-1 order-md-2 mt-5 mb-5 content-container position-relative">
-                        <img :src="getImage('{{ url_for('static', filename='images/avatar/Founder/avatar-1.jpg') }}')" class="avatar-img d-block" alt="Image 1" style="width: 450x; height: auto;">
+                        <img :src="getImage('{{ url_for('static', filename='images/avatar/Founder/avatar-1.jpg') }}')" class="avatar-img d-block rounded-5" alt="Image 1" style="width: 450x; height: auto;">
                         <div class="row col-md-7 order-1 order-md-1 mt-5 position-relative">
                             <img :src="getImage('{{ url_for('static', filename='images/signature/_i17_img1.png') }}')" class="signature-img" alt="Signature" height="120" width="300">
                         </div>
@@ -96,28 +96,30 @@
         </div>
     </div>
     
-      <!-- Senior / Junior -->
+    <!-- Senior / Junior -->
     <div class="container text-center mt-3">
-        <div class="row row-cols-1  row-cols-md-3 g-4 d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
             <div class="col-md-4 mt-5 mb-5">
-            <div class="p-md-1">
-                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_4.jpg')}}')" alt="Image 4" >
-                <h4 class="text-dark mt-3" v-text="getContent('content-H38')" ></h4>
-                <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H39')"></h5>
-                <p class="text-dark mt-3" v-text="getContent('content-H40')"></>
-                <p class="text-center text-dark mt-3" v-text="getContent('content-H41')"></p>
-            </div>
+                <div class="p-md-1">
+                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_4.jpg')}}')" alt="Image 4">
+                    <h4 class="text-dark mt-3" v-text="getContent('content-H38')"></h4>
+                    <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H39')"></h5>
+                    <p class="text-dark mt-3" v-text="getContent('content-H40')"></p>
+                    <p class="text-center text-dark mt-3" v-text="getContent('content-H41')"></p>
+                </div>
             </div>
             <div class="col-md-4 mt-5 mb-5">
-            <div class="p-md-1">
-                <img class="p-1 img-fluid" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_3.jpg')}}')" alt="Image 3" >
-                <h4 class="text-dark mt-3" v-text="getContent('content-H42')" ></h4>
-                <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H43')"></h5>
-                <p class="text-dark mt-3" v-text="getContent('content-H44')"></>
-                <p class="text-center text-dark mt-3" v-text="getContent('content-H45')"></p>            </div>
+                <div class="p-md-1">
+                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_3.jpg')}}')" alt="Image 3">
+                    <h4 class="text-dark mt-3" v-text="getContent('content-H42')"></h4>
+                    <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H43')"></h5>
+                    <p class="text-dark mt-3" v-text="getContent('content-H44')"></p>
+                    <p class="text-center text-dark mt-3" v-text="getContent('content-H45')"></p>            
+                </div>
             </div>
         </div>
     </div>
+    
     <!--  -->
 
     <div class="container-fluid bg-dark">
@@ -174,7 +176,7 @@
         </div>
     </div>
     <!--  -->
-    <div class="container-fluid bg-gray">
+    <div class="container-fluid bg-dark">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 80%;">
                 <div class="row mt-3">
@@ -183,16 +185,23 @@
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
-                            <h4 class=" mt-5">GIÁ TRỊ CỐT LÕI</h4>
-                            <p class="col-lg-10 ">Behind The Chair làm việc với tiêu chí luôn rõ ràng và sòng phẳng với khách hàng trong mọi phương diện. Trong suốt hơn 3 năm qua chúng tôi chưa bao giờ ngừng cải tiến và phát triển tay nghề, đội ngũ với các line sản phẩm phân khúc cao cấp để mang lại giá trị dịch vụ ngày một tốt hơn.</p>
-                            <p class="col-lg-10 ">Chúng tôi trân trọng từng đóng góp của khách hàng và lấy đó làm kim chỉ nam để phát triển dịch vụ - nâng tầm trải nghiệm.</p>
+                            <h4 class=" mt-5 text-light"  v-text="getContent('content-H48')"></h4>
+                            <p class="col-lg-10 text-light "  v-text="getContent('content-H49')"></p>
+                            <p class="col-lg-10 text-light "  v-text="getContent('content-H50')"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!--  -->
+    <div class="container-fluid text-center">
+        <div class="row bg-light position-relative" >
+            <div class="overflow-hidden">
+                <h5 class="overflow-hidden fs-4 fw-bold text-dark text-center mb-3 mt-3" v-text="getContent('content-H56')"></h5>
+            </div>
+        </div>
+      </div>
  
     {% include 'footer.html' %}
 </div>

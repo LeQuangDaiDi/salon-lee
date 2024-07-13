@@ -1,7 +1,8 @@
 <div class="container-fluid bg-dark text-white py-5">
     <div class="container">
         <div class="row ">
-        <div class="col-lg-6 col-md-4 col-sm-12 lh-base">
+        <div class="col-lg-6 col-md-4 col-sm-12 lh-base"> 
+            <img class="d-flex w-5"  :src="getImage('{{ url_for('static', filename='images/logo/logo_white.png')}}')" alt="Background Image">
             <h5 class="overflow-hidden text-white mt-3" v-text="getContent('content-H19')"></h5>
             <a :href="getImage('https://booking.easysalon.vn/leehairsalonq1')" class="btn btn-light custom-btn" tabindex="-1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
             <h5 class="overflow-hidden text-white mt-4" v-text="getContent('content-H21')"></h5>

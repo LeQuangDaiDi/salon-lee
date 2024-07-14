@@ -76,8 +76,10 @@ const app = createApp({
                     'content-H54': 'RESTORATION SERVICE',
                     'content-H55': 'PREMIUM SERVICE',
                     'content-H56': 'CONTACT US NOW FOR CONSULTATION SUPPORT AND PARTICIPATE IN THE LATEST DISCOUNT PROGRAMS!',
-                    'content-H57': 'Copyright © Lee Hair Salon',
-                    'content-H58': 'Copyright © 2024 | All rights reserved.',
+                    'content-H57': '© Lee Hair Salon | 2024',
+                    'content-H58': 'Copyright © INet Mowxl | All rights reserved.',
+                    'content-H59': 'TRUSTED BRAND',
+                    'content-H60': 'More...',
 
 
 
@@ -153,9 +155,12 @@ const app = createApp({
                     'content-H54': 'DỊCH VỤ PHỤC HỒI',
                     'content-H55': 'DỊCH VỤ PREMIUM',
                     'content-H56': 'LIÊN HỆ NGAY ĐỂ ĐƯỢC HỖ TRỢ TƯ VẤN VÀ THAM GIA CÁC CHƯƠNG TRÌNH GIẢM GIÁ MỚI NHẤT!',
-                    'content-H57': 'Copyright © Lee Hair Salon',
-                    'content-H58': 'Copyright © 2024 | All rights reserved.',
-                    'content-H59': '',
+                    'content-H57': '© Lee Hair Salon | 2024',
+                    'content-H58': 'Copyright © INet Mowxl | All rights reserved.',
+                    'content-H59': 'THƯƠNG HIỆU TIN DÙNG',
+                    'content-H60': 'More...',
+
+
                 }
                 
             }

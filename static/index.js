@@ -52,11 +52,11 @@ const app = createApp({
                     'content-H30': 'FOUNDER/MASTER',
                     'content-H31': '10 years of experience',
                     'content-H32': 'LE NGOC PHAT',
-                    'content-H33': 'Mr. Lee Phat is not only a famous Hair Artist with skillful bleaching and dyeing techniques. With over 10 years of experience.',
-                    'content-H34': 'Vidal Sassoon School combines Japanese - Korean style to create a unique style.',
-                    'content-H35': 'Trained by international experts such as: England - Italy - France - Japan - Korea.',
-                    'content-H36': 'Strengths: Cutting - curling - straightening - dyeing - Balayage - Highlight.',
-                    'content-H37': '-- Mr. Le Ngoc Phat--',
+                    'content-H33': 'Mr. Lee Phat is not only a famous Hair Artist with skillful bleaching and dyeing techniques. With more than 10 years of experience.',
+                    'content-H34': 'The Vidal Sassoon School combines Japanese and Korean styles to create a unique style.',
+                    'content-H35': 'Trained by international experts from England, Italy, France, Japan, and Korea, bringing top-notch knowledge and skills.',
+                    'content-H36': 'Strengths: Cutting, Curling, Straightening, Dyeing, Balayage, Highlighting.',
+                    'content-H37': '- Mr. Le Ngoc Phat -',
                     'content-H38': 'SENIOR STYLIST',
                     'content-H39': 'Mss KHANH NHU',
                     'content-H40': 'Experience from 3 years+',
@@ -76,6 +76,10 @@ const app = createApp({
                     'content-H54': 'RESTORATION SERVICE',
                     'content-H55': 'PREMIUM SERVICE',
                     'content-H56': 'CONTACT US NOW FOR CONSULTATION SUPPORT AND PARTICIPATE IN THE LATEST DISCOUNT PROGRAMS!',
+                    'content-H57': 'Copyright © Lee Hair Salon',
+                    'content-H58': 'Copyright © 2024 | All rights reserved.',
+
+
 
 
                 },
@@ -127,8 +131,8 @@ const app = createApp({
                     'content-H32': 'LÊ NGỌC PHÁT',
                     'content-H33': 'Mr. Lee Phat không chỉ là một Hair Artist nổi tiếng với kỹ thuật tẩy nhuộm đầy tài tình. Với kinh nghiệm hơn 10 năm.',
                     'content-H34': 'Trường Phái Vidal Sassoon kết hợp phong cách Nhật - Hàn tạo ra một phong cách riêng biệt.',
-                    'content-H35': 'Được đào tạo bởi các chuyên gia quốc tế như: Anh - Ý - Pháp - Nhật - Hàn.',
-                    'content-H36': 'Thế mạnh: Cắt - uốn - duỗi - nhuộm - Balayage - Highlight.',
+                    'content-H35': 'Đã được đào tạo bởi các chuyên gia quốc tế từ Anh, Ý, Pháp, Nhật, và Hàn, mang đến những kiến thức và kỹ năng đỉnh cao.',
+                    'content-H36': 'Thế mạnh: Cắt, Uốn, Duỗi, Nhuộm, Balayage, Highlight.',
                     'content-H37': '- Mr. Le Ngoc Phat -',
                     'content-H38': 'SENIOR STYLIST',
                     'content-H39': 'KHÁNH NHƯ',
@@ -149,8 +153,8 @@ const app = createApp({
                     'content-H54': 'DỊCH VỤ PHỤC HỒI',
                     'content-H55': 'DỊCH VỤ PREMIUM',
                     'content-H56': 'LIÊN HỆ NGAY ĐỂ ĐƯỢC HỖ TRỢ TƯ VẤN VÀ THAM GIA CÁC CHƯƠNG TRÌNH GIẢM GIÁ MỚI NHẤT!',
-                    'content-H57': '',
-                    'content-H58': '',
+                    'content-H57': 'Copyright © Lee Hair Salon',
+                    'content-H58': 'Copyright © 2024 | All rights reserved.',
                     'content-H59': '',
                 }
                 

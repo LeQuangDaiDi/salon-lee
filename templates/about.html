@@ -62,7 +62,7 @@
         <div class="row bg-light text-center">
             <div class=" col-lg-2 col-md-2 col-sm-1" ></div>
             <div class="overflow-hidden mt-3 col-md-7 col-lg-8 col-sm-10">
-                <p class="overflow-hidden lh-base text-dark mb-4 mt-3 lh-base text-reponsive" v-text="getContent('content-H29')"></p>
+                <p class="overflow-hidden lh-base text-dark mb-4 mt-3 mx-2" v-text="getContent('content-H29')"></p>
             </div>
             <div class=" col-lg-2 col-md-2 col-sm-1"></div>
         </div>
@@ -82,13 +82,13 @@
                             <p class="ms-lg-6" v-text="getContent('content-H34')"  ></p>
                             <p class="ms-lg-6" v-text="getContent('content-H35')"  ></p>
                             <p class="ms-lg-6" v-text="getContent('content-H36')"  ></p>
-                            <p class="ms-lg-6 fw-bold" v-text="getContent('content-H37')"  ></p>
+                            <p class="ms-lg-6 fw-bold mb-5" v-text="getContent('content-H37')"  ></p>
                         </div>
                     </div>
                     <div class="col-md-6 order-1 order-md-2 mt-5 mb-5 content-container position-relative">
-                        <img :src="getImage('{{ url_for('static', filename='images/avatar/Founder/avatar-1.jpg') }}')" class="avatar-img d-block rounded-3" alt="Image 1" style="width: 350px; height: auto;">
+                        <img :src="getImage('{{ url_for('static', filename='images/avatar/Founder/avatar-1.jpg') }}')" class="avatar-img d-block rounded-3" alt="Image 1" style="width: 100%;">
                         <div class="row col-md-7 order-1 order-md-1 mt-5 position-relative">
-                            <img :src="getImage('{{ url_for('static', filename='images/signature/_i17_img1.png') }}')" class="signature-img" alt="Signature" style="width: 300px;height:auto">
+                            <img :src="getImage('{{ url_for('static', filename='images/signature/_i17_img1.png') }}')" class="signature-img" alt="Signature" style="width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -101,20 +101,21 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
             <div class="col-md-4 mt-5 mb-5">
                 <div class="p-md-1">
-                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_4.jpg')}}')" alt="Image 4">
-                    <h4 class="text-dark mt-3" v-text="getContent('content-H38')"></h4>
-                    <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H39')"></h5>
-                    <p class="text-dark mt-3" v-text="getContent('content-H40')"></p>
-                    <p class="text-center text-dark mt-3" v-text="getContent('content-H41')"></p>
+                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_4.jpg')}}')" alt="Image 4" style="width: 80%;">
+                    <h4 class="text-dark mt-3"  v-text="getContent('content-H38')"></h4>
+                    <h5 class="text-dark mt-3 fw-bold"  v-text="getContent('content-H39')"></h5>
+                    <p class="text-dark mt-3"  v-text="getContent('content-H40')"></p>
+                    <p class="text-center text-dark mt-3 mx-5" v-text="getContent('content-H41')"></p>
                 </div>
             </div>
+    
             <div class="col-md-4 mt-5 mb-5">
                 <div class="p-md-1">
-                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_3.jpg')}}')" alt="Image 3">
+                    <img class="p-1 img-fluid rounded-4" :src="getImage('{{ url_for('static', filename='images/avatar/Senior/sr_3.jpg')}}')" alt="Image 3" style="width: 80%;">
                     <h4 class="text-dark mt-3" v-text="getContent('content-H42')"></h4>
                     <h5 class="text-dark mt-3 fw-bold" v-text="getContent('content-H43')"></h5>
                     <p class="text-dark mt-3" v-text="getContent('content-H44')"></p>
-                    <p class="text-center text-dark mt-3" v-text="getContent('content-H45')"></p>            
+                    <p class="text-center text-dark mt-3 mx-5" v-text="getContent('content-H45')"></p>            
                 </div>
             </div>
         </div>
@@ -180,7 +181,7 @@
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 80%;">
                 <div class="row mt-3">
-                    <div class="col-md-6 order-2 order-md-1 mt-5 mb-5 content-container position-relative">
+                    <div class="col-md-6 order-2 order-md-1 mt-3 mb-5 content-container position-relative">
                         <img :src="getImage('{{ url_for('static', filename='images/background/bg-10.jpg') }}')" class="avatar-img d-block rounded-2" alt="Image 1" style="width: 450x; height: auto;">
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
